@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>links</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        a {
+            color: green;
+            padding: 5px 10px 10px 10px;
+        }
+        div{
+            height: 50px;
+        }
+        .link1{
+            display: flex;
+            list-style-type: none;
+            width: 700px;
+            justify-content: start;
+        }
+        .link3 a{
+            border-right: solid 3px red;
+        }
+        li {
+        position: relative;
+      }
+      li::after {
+        content: url("stena.jpeg");
+        position: absolute;
+        top: -6px;
+      }
+    </style>
+</head>
+<body>
+       <ul class="link1">
+        <li><a href="https://www.onliner.by/">первая ссылка</a></li>
+        <li><a href="https://www.onliner.by/">вторая ссылка</a></li>
+        <li><a href="https://www.onliner.by/">третья ссылка</a></li>
+        <li><a href="https://www.onliner.by/">четвертая ссылка</a></li>
+        <li><a href="https://www.onliner.by/">пятая ссылка</a></li>
+       </ul>
+
+    <div class="link2">
+        <a href="https://www.onliner.by/">первая ссылка</a>
+        <img src="stena.jpeg" align="center">
+        <a href="https://www.onliner.by/">вторая ссылка</a>
+        <img src="stena.jpeg" align="center">
+        <a href="https://www.onliner.by/">третья ссылка</a>
+        <img src="stena.jpeg" align="center">
+        <a href="https://www.onliner.by/">четвертая ссылка</a>
+        <img src="stena.jpeg" align="center">
+        <a href="https://www.onliner.by/">пятая ссылка</a>
+        <img src="stena.jpeg" align="center">
+
+    </div>
+    <div class="link3">
+        <a href="https://www.onliner.by/">первая ссылка</a>
+        <a href="https://www.onliner.by/">вторая ссылка</a>
+        <a href="https://www.onliner.by/">третья ссылка</a>
+        <a href="https://www.onliner.by/">четвертая ссылка</a>
+        <a href="https://www.onliner.by/">пятая ссылка</a>
+    </div>
+</body>
+</html>

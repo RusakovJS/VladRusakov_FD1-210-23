@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dop6.1.</title>
+</head>
+<body>
+    <p> Для иcпользования тега <picture> создаем медиазапросы и применяем к нему условия:</p>
+        <ul>
+            <li>Если (max-width: 500px)-загрузится картинка с орлом</li>
+            <li>Если (max-width: 800px)-загрузится картинка с уткой</li>
+            <li>Если (max-width: 1200px)-загрузится картинка с пейзажем</li>
+    <p>Если ни одно условие не попадает под медиазапрос, то будет использоваться картинка с кроликом</p>
+        </ul>
+    <picture>
+        <source srcset="orel.webp" media="(max-width: 500px)" >
+        <source srcset="duck.jpg" media="(max-width: 800px)">
+        <source srcset="ozero.jpeg" media="(max-width: 1200px)">
+        <img src="krolik.jpg">
+    </picture>
+</body>
+</html>
