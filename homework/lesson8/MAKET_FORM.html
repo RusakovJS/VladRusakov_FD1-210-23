@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>maket form</title>
+    <style>
+         *{
+            margin: 0;
+            padding: 0;
+            box-sizing:border-box;
+         }
+
+         form{
+            margin: 15px;
+         }
+         .nazvanie{
+            float: left;
+         }
+         .statie{
+            margin-left: 190px;
+         }
+         .publick_input{
+            display: inline;
+            margin-left: 100px;
+         }
+         .media{
+            display: contents;
+         }
+         .input{
+            width: 100%;
+         }
+         .rubrika{
+            margin-left: 130px;
+         }
+         .checkbox{
+            margin-left: 6px;
+         }
+         .coment{
+            width: 100%;
+         }
+         @media all and (max-width: 570px){
+            .statie{
+               margin: 0;
+            }
+            .rubrika{
+               margin: 0;
+               display: block;
+
+            }
+            .publick_input{
+               display: block;
+               margin: 0;
+            }
+            .media{
+            display: inline-block;
+            margin: 0;
+         }  
+            }
+    </style>
+</head>
+<body>
+    <form>
+        <p>Для публикации вашей статьи заполните, пожалуйста, следующую форму:</p><br>
+        <p class="nazvanie">Название статьи:</p>
+        <div class="statie">
+         <input class="input" type="text">
+      </div>
+        <div> Рубрика:<select class="rubrika" name="rubrika">
+        <option value="1">Компьютерная техника</option>
+        <option value="2" selected>Программирование</option>
+        <option value="3">Графика и дизайн</option>
+        </select></div>
+        <div> Публикация:<br class="media">
+         <div class="publick_input">
+        <input  type="radio" name="publick" value="1">на сайте <br class="media">
+        <input  type="radio" name="publick" value="2">в журнале <br class="media">
+        <input  type="radio" name="publick" value="3">на сайте и в журнале
+         </div>
+      </div>
+    <p>Разрешить комментарии: <input class="checkbox" type="checkbox" checked></p>
+    <div>
+        <p>Текст статьи:</p>
+        <textarea class="coment"></textarea><br>
+        <input type="submit" value="Опубликовать">
+    </div>
+        
+        
+    </form>
+</body>
+</html>
