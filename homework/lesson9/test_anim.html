@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .conteiner{
+            height: 100vh;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .spotify{
+            width: 233px;
+            height: 188px;
+        }
+        .conteiner:hover .spotify{
+            animation: 5s linear infinite spotify;
+        }
+        .monetka{
+            width: 48px;
+            height: 48px;
+            animation: monetka 1s steps(10) infinite;
+        }
+        .netflix{
+            background-color: blue;
+        }
+        .conteiner:hover .netflix{
+            background-color:blueviolet;
+            animation: netflix 5s linear infinite;
+        }
+
+        @keyframes monetka{
+            from{
+                background: url(monetka.png) 0, 0;
+            }
+            to{
+                background: url(monetka.png) -480px, 0;
+            }
+        }
+        @keyframes spotify{
+            0%{
+                background: 0, 0;
+                transform: rotate(0deg) translate(0, 0px);
+            }
+            25%{
+                
+                transform: rotate(25deg) translate(0, 70px);
+                
+            }
+            50%{
+                transform: rotate(-25deg) translate(0, -70px);
+            }
+            75%{
+                transform: rotate(-75deg) translate(0, 70px);
+            }
+            100%{
+                transform: rotate(0deg) translate(0, 0px);
+            }
+        }
+        @keyframes netflix{
+            0% {transform: scale(1.2);
+                background-color: aqua;}
+            50%{transform: scale(0.8);
+                background-color: red;}
+            100%{transform: scale(1.2);
+                background-color: goldenrod;}
+        }
+    </style>
+</head>
+<body>
+    <div class="conteiner">
+        <div class="spotify">
+            <img src="spotify.jpg">
+        </div>
+
+        <div class="monetka"></div>
+
+        <div class="netflix">
+             <img src="netflix.png">
+        </div>
+    </div>
+</body>
+</html>
+

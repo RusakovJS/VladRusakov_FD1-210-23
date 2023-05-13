@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>maket</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .header{
+            background-color: #aed9e7; 
+            padding: 10px; 
+            text-align: center;
+            color: blue;
+            font-size: 32px;
+            width: auto;
+        }
+        .body{
+            display: flex;
+            flex-wrap: unset;
+        }
+        .menu{
+            font-size: 16px;
+            flex-basis: 200px;
+            flex-shrink: 0;
+            background-color: #f0e68c;
+        }
+        ul{
+            padding: 22px;
+        }
+        .footer{
+            background-color: #aed9e7; padding: 10px; 
+            text-align: center;
+            color: blue;
+            font-size: 32px;
+        }
+        div>img{
+            float: left;
+            padding: 20px;
+        }
+        div.menu h3{
+            padding-left: 22px;
+        }
+        div.content h3{
+            text-align: center;
+            padding: 15px;
+        }
+        .content{
+            background-image: url(ball.png);
+            background-repeat: repeat-y; 
+            background-position: top right;
+        }
+        @media all and (max-width:800px){
+        .header,.footer {
+            display: none;
+        }
+        .conteiner{
+            display: block;
+        }
+        .menu{
+            background-color: transparent;
+        }
+        div>img{
+            padding: 20px;
+            float: none;
+        }
+        ul{
+        list-style-type: none;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        white-space: nowrap;
+        margin-right: 20px;
+    }
+    div ul>li{
+        margin: 10px;
+    }
+    .content{
+        background: none;
+    }
+    .body{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+        }
+    </style>
+</head>
+<body>
+    <div class="conteiner">
+        <div class="header">ПРИВЕТ УЧАСТНИКАМ СОРЕВНОВАНИЙ</div>
+    <div class="body">
+        <div class="menu"><h3>Виды спорта:</h3>
+            <ul>
+                <li><a href="https://www.onliner.by/">Конькобежный спорт</a></li>
+                <li><a href="https://www.onliner.by/">Биатлон</a></li>
+                <li><a href="https://www.onliner.by/">Футбол</a></li>
+                <li><a href="https://www.onliner.by/">Стрельба из лука</a></li>
+                <li><a href="https://www.onliner.by/">Прыжки в длину</a></li>
+                <li><a href="https://www.onliner.by/">Прыжки в высоту</a></li>
+                <li><a href="https://www.onliner.by/">Фигурное катание</a></li>
+                <li><a href="https://www.onliner.by/">Синхронное плавание</a></li>
+                <li><a href="https://www.onliner.by/">Шахматы</a></li>
+                <li><a href="https://www.onliner.by/">Шашки</a></li>
+            </ul>
+        </div>
+        
+        <div class="content">
+            <h3>Футбол</h3>
+            <img src="footboll.jpeg" alt="football">
+            <p>Футбо́л (англ. football от foot «ступня» + ball «мяч») — командный вид спорта, 
+            в котором целью является забить мяч в ворота соперника ногами или другими частями тела 
+            (кроме рук) большее количество раз, чем команда соперника. В настоящее время самый популярный
+             и массовый вид спорта в мире</p><br>
+        <p>Полное англоязычное название игры, «association football» («футбол по правилам Ассоциации»),
+             было выбрано после создания английской Футбольной ассоциации в 1863 году, чтобы отличать эту 
+             игру от других разновидностей футбола, существовавших в то время, например регби-футбол 
+             («rugby football», «футбол по правилам Школы Рагби»), где была разрешена игра руками. Со 
+             временем длинные названия вариантов игры стали сокращаться в повседневной речи и печати. 
+             Сначала в Англии было распространено сокращение «assoc.», затем в 1880-х годах от него образовался 
+             термин «соккер» (англ. soccer) путём добавления к сокращению «-soc-» суффикса «-er» на оксфордский манер[en] 
+             (по аналогии регби-футбол сокращённо назывался «раггер» (англ. rugger)).</p><br>
+             <p>В периодике термин «соккер» используется по крайней мере с 1892 года. 
+             Согласно Оксфордскому словарю английского языка, самое раннее использование слова «soccer» 
+             в письменном языке зафиксировано в 1889 году в письме английского поэта Эрнеста Доусона 
+             (хотя он пишет его как socca, предположительно, потому что у него ещё не было стандартной письменной формы).</p></div>
+    </div>
+        <div class="footer">ГЛАВНОЕ НЕ ПОБЕДА, А УЧАСТИЕ!</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test_svg</title>
+
+    <style>
+@keyframes play
+{
+    to{background: url(personaj.png) -761px 0;}
+
+}
+@keyframes step{
+    100%{
+        left: 100%;
+    }
+}
+.wrapper{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+.spraites{
+    width: 76px;
+    height: 108px;
+    background: url(personaj.png) 0px 0px;
+    animation: play 1s steps(9) infinite,
+    step 5s linear infinite;
+    position: absolute;
+    left: 0;
+}
+    </style>
+
+</head>
+<body>
+    <div class="wrapper">
+        <div class="spraites">
+        </div>
+    </div>
+</body>
+</html>
